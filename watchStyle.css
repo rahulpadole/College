@@ -1,0 +1,46 @@
+#clockCont{
+    position: relative;
+    margin: auto;
+    background-color: red;
+    height: 40vw;
+    width: 40vw;
+    height: 440px;
+    width: 440px;
+    background: url(Watch.png) no-repeat;
+    background-size: 100%;
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+}
+
+#hour{
+    width: 2%;
+    height: 28%;
+    top: 22.5%;
+    left: 49%;
+    opacity: 1;
+    transform-origin: bottom;
+}
+
+#minute{
+    width: 1%;
+    height: 33%;
+    top: 17%;
+    left: 49.5%;
+    opacity: 0.5;
+    transform-origin: bottom;
+
+}
+
+#second{
+    width: 1%;
+    height: 39%;
+    top: 11%;
+    left: 49.5%;
+    opacity: 0.8;
+    transform-origin: bottom;
+
+}
