@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./ACE_LOGO.jpg">
+    <link rel="stylesheet" href="Text_to_Speech.css">
+    <title>Text To Voice</title>
+</head>
+<body>
+    
+    <h1 class="heading">Text To Voice</h1>
+
+    <textarea id="textbox"></textarea><br><br>
+    <button id="speakbtn" onclick="speak()">Speak</button>
+
+    <!-- This function will use to covert text to voice-->
+    <script>
+        function speak(){
+            let synth = window.speechSynthesis;
+            let voice = new SpeechSynthesisUtterance(`${textbox.value}`);
+            voice.lang = 'India'; // 'hi-IN' represents Hindi (India) language
+            let sounds = synth.getVoices();
+            voice.voice = sounds[2]
+            voice.pitch = 0.7;
+            voice.rate = 0.8;
+            synth.speak(voice);
+        }
+    </script>
+
+</body>
+</html>
