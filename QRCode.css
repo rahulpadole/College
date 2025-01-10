@@ -1,0 +1,52 @@
+/* QRCode.css */
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.qr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* QR Code Styles */
+.qr {
+    width: 250px;
+    height: 250px;
+    background-color: #ede7e7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    padding-left: 100px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.qr:hover {
+    transform: scale(1.8);
+}
+
+.qr-code {
+    margin: auto;
+}
+
+/* Heading Styles */
+h2 {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .qr {
+        width: 200px;
+        height: 200px;
+    }
+}
